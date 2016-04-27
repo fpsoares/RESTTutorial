@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/linlayout_main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET ALL"
+        android:id="@+id/button_get_all"
+        />
+  </LinearLayout>
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_record_id"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:hint="record id"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET ONE"
+        android:id="@+id/button_get_one"
+        android:layout_gravity="center_vertical"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:id="@+id/button_delete"
+        android:layout_gravity="center_vertical"
+        />
+  </LinearLayout>
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <EditText
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:id="@+id/editText_name"
+          android:layout_weight="1"
+          android:hint="name"
+          />
+
+      <EditText
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:inputType="textEmailAddress"
+          android:ems="10"
+          android:id="@+id/editText_email"
+          android:layout_weight="1"
+          android:hint="email"
+          />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST"
+        android:id="@+id/button_post"
+        />
+  </LinearLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/scrollView"
+      >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="output"
+          android:id="@+id/textView_output"
+          />
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>
